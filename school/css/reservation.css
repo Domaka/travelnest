@@ -1,0 +1,126 @@
+@import url('style.css');
+
+*{
+    margin: 0;
+    font-family: var(--body-font-family);
+}
+header{
+    margin-top: 0;
+}
+
+body{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+.con{
+    padding: 20px;
+    box-shadow: 0 10px 20px var(--primary-color); /* Blue glow shadow */
+    transform: translateY(-5px);
+}
+.container{
+    padding: 0;
+    margin: 0;
+}
+
+.imge{
+    margin-top: 10px;
+    top: 0;
+    border-radius: 0;
+
+}
+
+.form{
+    display: flex   ;
+    gap: 6em;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.hot{
+    margin-top: 20px;
+    margin-bottom: 20PX;
+}
+.pi{
+    font-size: 12px;
+    margin: 0;
+}
+
+label{
+
+    font-weight: var(--font-weight-bold);
+}
+
+.f_part{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.s_part{
+    display: flex;
+    flex-direction: column;
+}
+
+.inp{
+    height: 100%;
+   padding: 10px 185px 10px  10px ;
+   width: 100%;
+   border-radius: 15px;
+   border: none;
+   background: var(--grey-color);
+   text-align: left;
+   box-sizing: border-box;
+}
+
+.inp[type="range"]{
+ padding: 0;
+}
+
+.inp[type="number"]{
+ padding: 10px 15px;
+}
+.inp[type="date"]{
+ padding: 10px 15px;
+}
+.inp[type="text"]{
+ padding: 10px 15px;
+}
+.inp[type="tel"]{
+ padding: 10px 15px;
+}
+
+
+.inp::placeholder{
+    text-align: left;
+}
+.hoti{
+    margin-top: 20px;
+    margin-bottom: 3px;
+}
+
+.iv{
+    margin-top: 10px;
+   display: flex;
+   gap: 1.5em;
+}
+
+
+.spec{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.tt{
+    margin-top: 10px;
+    background: var(--grey-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.get{
+    border-radius: 0;
+    padding: 10px 15px;
+}
