@@ -31,15 +31,15 @@
                     keyboard_arrow_down
                     </span>
                 <ul class="drop">
-                    <li>
-                        Hotel
-                    </li>
-                    <li>
-                        Airbnb
-                    </li>
-                    <li>
-                        Luxury Villas
-                    </li>
+                    <a href="reservation.html"> <li>
+                          Hotel
+                    </li></a>
+                    <a href="reservation.html">  <li>
+                          Airbnb
+                    </li></a>
+                    <a href="reservation.html">  <li>
+                         Luxury Villas
+                    </li></a>
                 </ul>
             </li>
             <li class="nav_menu">
@@ -65,6 +65,15 @@
         </ul>
     </nav>
 </header>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+      <p>Head over to <a href="reservation.html">Reservation</a> to book a hotel.</p>
+      <button id="closePopup" class="close-button">Cancel</button>
+    </div>
+  </div>
+
+
 <main>
 <div class="container">
     <div class="container_text">
@@ -285,6 +294,24 @@
         });
     });
 });
+
+
+// Show the popup
+function showPopup() {
+  const popup = document.getElementById("popup");
+  popup.style.visibility = "visible";
+  popup.style.opacity = "1";
+}
+
+// Close the popup
+document.getElementById("closePopup").addEventListener("click", function () {
+  const popup = document.getElementById("popup");
+  popup.style.visibility = "hidden";
+  popup.style.opacity = "0";
+});
+
+// Example: Automatically show the popup after 3 seconds (optional)
+setTimeout(showPopup, 3000);
 
  </script>
 </body>
